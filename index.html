@@ -4,26 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="logo-gjorce-petrov.svg" />
+    <link rel="icon" href="../images/logo-gjorce-petrov.svg" />
     <title>СОУ Ѓорче Петров - Крива Паланка | Почетна</title>
   </head>
   <body>
     <section>
       <div class="account">
         <button class="notifications" type="button">
-          <img src="notification.svg" alt="Notifications" />
+          <img src="images/icons/notification.svg" alt="Notifications" />
         </button>
         <button type="button" class="profile">
-          <img src="profile.svg" alt="Profile" />
+          <img src="images/icons/profile.svg" alt="Profile" />
         </button>
       </div>
     </section>
     <header>
       <div>
-        <img src="logo-gjorce-petrov.svg" />
+        <a href="index.html"><img src="images/logo-gjorce-petrov.svg" /></a>
         <p>Ѓорче Петров</p>
       </div>
       <nav>
+        <button type="button" class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <ul>
           <li><a href="">За Гимназијата</a></li>
           <li><a href="">Струки</a></li>
@@ -36,33 +39,79 @@
     </header>
     <div class="content">
       <div class="text">
-        <div class="center">
+        <div class="center split">
           <span>Ѓорче Петров</span>
           <span>Крива Паланка</span>
         </div>
       </div>
       <div class="img">
-        <img src="profesori.jpg" alt="Gjorce Petrov Vraboteni" />
+        <img src="images/vraboteni.png" alt="Gjorce Petrov Vraboteni" />
       </div>
     </div>
-    <!--<footer>
-      <h1>Контакти:</h1>
-      <p>
-        <b>ЃОРЧЕ ПЕТРОВ ц.о. Крива Паланка, Средно Општинско Училиште</b><br />
-        ул.8-ми Октомври бр. 91<br />
-        1330 Крива Паланка<br />
-        Република Северна Македонија
-      </p>
-      <div>
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-        <span
-          style="font-weight: bold; cursor: pointer"
-          href="mailto:sougorcepetrov@yahoo.com"
-          >sougorcepetrov@yahoo.com</span
-        >
+    <div class="content reverse">
+      <div class="img">
+        <img src="images/bezbednost.png" alt="Bezbednost" />
       </div>
-      <a> © 2019. Сите права се задржани </a>
-    </footer>-->
+      <div class="text">
+        <h1>Безбедност</h1>
+        <p>
+          Во Гимназија „Ѓорче Петров“, веруваме дека нашите ученици имаат право
+          на чиста, безбедна и заштитена средина за учење. Ние го направивме тоа
+          можно со регуларни процедури за чистење и дезинфекција, како и
+          почитување на сите безбедносни протоколи. Нашата мисија е да го
+          повисиме знаењето на нашите ученици со систем кој ги поддржува да
+          станат граѓани кои ќе можат да бидат успешни во глобалната
+          усогласеност.
+        </p>
+      </div>
+    </div>
+    <div class="social-links">
+      <a
+        href="https://www.youtube.com/@sougorcepetrovkrivapalanka4547"
+        target="_blank"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a href="https://www.facebook.com/gjorcepetrov" target="_blank"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
+      <a href="https://www.instagram.com/uz_gjorchepetrov/" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+
+    <footer>
+      <div class="adresa">
+        <p>
+          ул.8-ми Октомври бр. 91<br />
+          1330 Крива Паланка<br />
+          Република Северна Македонија<br />
+          031/375-025<br />
+          <a href="mailto:sougorcepetrov@yahoo.com">sougorcepetrov@yahoo.com</a>
+        </p>
+      </div>
+      <div class="contact">
+        <form action="">
+          <div class="info">
+            <p>Ime</p>
+            <input type="text" />
+            <p>Prezime</p>
+            <input type="text" />
+          </div>
+          <div class="email">
+            <p>Email *</p>
+            <input type="email" !required />
+            <p>Naslov</p>
+            <input type="text" />
+
+            <p>Napisete poraka...</p>
+            <textarea name="poraka" id="poraka" cols="23" rows="5"></textarea>
+            <br />
+            <button type="submit">Испрати</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <p class="copyright">© 2019. Сите права се задржани</p>
   </body>
   <script
     src="https://kit.fontawesome.com/29eea0312f.js"
