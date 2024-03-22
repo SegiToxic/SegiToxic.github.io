@@ -38,17 +38,18 @@ body {
     display: flex;
     align-items: center;
   }
-  header nav button {
-    width: 30px;
-    height: 30px;
-  }
   header nav .menu {
     border: 0;
     background: white;
     font-size: 30px;
     cursor: pointer;
+    width: 31px;
+    height: 31px;
+    background-color: yellow;
   }
-
+  header nav .menu i {
+    background-color: orange;
+  }
   .content {
     display: flex;
     flex-direction: column;
