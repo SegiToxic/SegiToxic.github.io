@@ -48,11 +48,9 @@ body {
     cursor: pointer;
     width: 31px;
     height: 31px;
-    background-color: red;
     padding:0;
   }
-  header nav .menu i {
-    background-color: blue;
+  i {
     margin:0;
     padding:0;
     width: inherit;
