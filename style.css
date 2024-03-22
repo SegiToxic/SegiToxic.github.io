@@ -38,6 +38,10 @@ body {
     display: flex;
     align-items: center;
   }
+  header nav button {
+    width: 30px;
+    height: 30px;
+  }
   header nav .menu {
     border: 0;
     background: white;
