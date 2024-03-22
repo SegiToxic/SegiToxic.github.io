@@ -55,6 +55,9 @@ body {
     background-color: orange;
     margin:0;
     padding:0;
+    width: inherit;
+    height: inherit;
+
   }
   .content {
     display: flex;
