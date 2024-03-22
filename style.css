@@ -39,6 +39,9 @@ body {
     align-items: center;
   }
   header nav .menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     border: 0;
     background: white;
     font-size: 30px;
@@ -49,6 +52,8 @@ body {
   }
   header nav .menu i {
     background-color: orange;
+    margin:0;
+    padding:0;
   }
   .content {
     display: flex;
