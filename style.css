@@ -122,8 +122,8 @@ body {
   }
   .social-links a {
     line-height: 50%;
-    font-size: calc(100% + 10px);
-    color: black;
+    font-size: 1.5vw;
+    color: red;
     width: 30px;
     height: 30px;
   }
