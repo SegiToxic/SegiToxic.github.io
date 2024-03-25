@@ -12,8 +12,8 @@ i::after,
 i::before {
   margin: 0;
   padding: 0;
-  width: calc(inherit - 1px);
-  height: calc(inherit - 1px);
+  width: inherit;
+  height: inherit;
 }
 
 @media only screen and (max-width: 699px) {
@@ -54,7 +54,7 @@ i::before {
     align-items: center;
     border: 0;
     background: white;
-    font-size: 8vw;
+    font-size: 7.5vw;
     cursor: pointer;
     width: 8vw;
     height: 8vw;
