@@ -6,6 +6,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+i,
+i::after,
+i::before {
+  margin: 0;
+  padding: 0;
+  width: calc(inherit - 1px);
+  height: calc(inherit - 1px);
+}
+
 @media only screen and (max-width: 699px) {
   section {
     display: none;
@@ -622,7 +632,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     padding: 2% 5%;
+  }
+  footer .adresa {
+    width: 50%;
   }
   footer .adresa p {
     line-height: 250%;
@@ -640,15 +654,14 @@ body {
     margin-left: 5%;
   }
   footer .contact {
-    display: flex;
-    justify-content: right;
-    width: 100%;
+    margin: auto;
+    width: 50%;
   }
   footer .contact form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 70%;
+    width: 90%;
   }
   footer .contact input,
   footer .contact textarea {
@@ -965,12 +978,4 @@ body {
     font-weight: bold;
     cursor: pointer;
   }
-}
-i,
-i::after,
-i::before {
-  margin: 0;
-  padding: 0;
-  width: inherit;
-  height: inherit;
 }
