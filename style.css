@@ -2,11 +2,14 @@
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
+html,
 body {
   margin: 0;
   padding: 0;
 }
-
+i {
+  overflow: hidden;
+}
 @media only screen and (max-width: 699px) {
   section {
     display: none;
@@ -29,11 +32,34 @@ body {
   header div p {
     margin: 0;
     width: 50%;
-    font-size: calc(100% + 10px);
+    font-size: 9vw;
     font-weight: bold;
   }
   header nav ul {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 70, 95, 0.95);
+    margin: 0;
+    padding: 0 10%;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    z-index: 1;
+  }
+  header nav ul li {
+    width: fit-content;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 5vw;
+  }
+  header nav ul li:active {
+    text-decoration: underline;
   }
   header nav {
     display: flex;
@@ -50,6 +76,19 @@ body {
     width: 8vw;
     height: 8vw;
     padding: 0;
+  }
+
+  header nav ul .social-links a {
+    color: white;
+    font-size: 10vw;
+  }
+  header nav ul .close {
+    position: fixed;
+    top: 5vw;
+    right: 5vw;
+    font-size: 10vw;
+    color: white;
+    z-index: inherit;
   }
   .content {
     display: flex;
@@ -101,7 +140,8 @@ body {
   .vesti-novosti {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: fit-content;
     justify-content: space-evenly;
     align-items: center;
@@ -144,6 +184,7 @@ body {
     font-size: 6vw;
     width: 100%;
     padding: 3%;
+    text-align: center;
     cursor: pointer;
   }
   .vesti-novosti div .vest-novost .naslov:hover {
@@ -152,7 +193,7 @@ body {
   .vesti-novosti div .vest-novost .objaveno {
     flex-direction: row;
     justify-content: left;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     width: 100%;
     color: rgb(102, 102, 102);
     margin-bottom: 2%;
@@ -564,7 +605,9 @@ body {
   header nav ul li:hover a {
     color: rgb(24, 75, 184);
   }
-
+  header nav ul .mobile {
+    display: none;
+  }
   .content {
     display: flex;
     flex-direction: row;
@@ -850,6 +893,11 @@ body {
   header nav ul li:hover a {
     color: rgb(24, 75, 184);
   }
+
+  header nav ul .mobile {
+    display: none;
+  }
+
   .content {
     display: flex;
     width: 80%;

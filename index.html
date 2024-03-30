@@ -24,16 +24,36 @@
         <p>Ѓорче Петров</p>
       </div>
       <nav>
-        <button type="button" class="menu">
+        <button type="button" id="menu-button" class="menu" onclick="openNav()">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <ul>
+        <ul id="navigation">
+          <a onclick="closeNav()" class="close mobile"
+            ><i class="fas fa-window-close"></i
+          ></a>
           <li><a href="">За Гимназијата</a></li>
           <li><a href="">Струки</a></li>
           <li><a href="">Уписи</a></li>
           <li><a href="vesti-nastani.html">Вести и Настани</a></li>
           <li><a href="">Проекти</a></li>
           <li><a href="">Часови</a></li>
+          <li class="mobile"><a href="">Логин</a></li>
+          <li class="mobile"><a href="">Регистрација</a></li>
+          <div class="social-links mobile" id="socials" style="display: none">
+            <a
+              href="https://www.youtube.com/@sougorcepetrovkrivapalanka4547"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.facebook.com/gjorcepetrov" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/uz_gjorchepetrov/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </ul>
       </nav>
     </header>
@@ -162,4 +182,5 @@
     src="https://kit.fontawesome.com/29eea0312f.js"
     crossorigin="anonymous"
   ></script>
+  <script src="script.js"></script>
 </html>
