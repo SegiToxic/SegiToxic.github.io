@@ -2,7 +2,11 @@
   section {
     display: none;
   }
+  .social-links {
+    display: none;
+  }
 
+  /*---------------------------------- Header ---------------------------------*/
   header {
     display: flex;
     width: 100%;
@@ -83,6 +87,7 @@
     color: white;
     z-index: inherit;
   }
+  /*---------------------------------- Content ---------------------------------*/
   .content {
     display: flex;
     flex-direction: column;
@@ -130,7 +135,8 @@
     font-size: 16px;
     padding: 0 4%;
   }
-  .vesti-novosti {
+  /*---------------------------------- Vesti i Nastani -----------------------------*/
+  .vesti-nastani {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -140,14 +146,14 @@
     align-items: center;
     padding: 2% 0;
   }
-  .vesti-novosti h1 {
+  .vesti-nastani h1 {
     color: black;
     width: 100%;
     height: 15vw;
     text-align: center;
     font-size: 10vw;
   }
-  .vesti-novosti div {
+  .vesti-nastani div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -156,7 +162,7 @@
     height: inherit;
   }
 
-  .vesti-novosti div .vest-novost {
+  .vesti-nastani div .vest-nastan {
     display: flex;
     flex-direction: column;
     width: 99%;
@@ -164,14 +170,14 @@
     border: 1px solid black;
     margin: 2% 0;
   }
-  .vesti-novosti div .vest-novost .slika {
+  .vesti-nastani div .vest-nastan .slika {
     align-items: start;
     width: 100%;
   }
-  .vesti-novosti div .vest-novost .slika img {
+  .vesti-nastani div .vest-nastan .slika img {
     width: 100%;
   }
-  .vesti-novosti div .vest-novost .naslov {
+  .vesti-nastani div .vest-nastan .naslov {
     justify-content: left;
     font-weight: bold;
     font-size: 6vw;
@@ -180,10 +186,10 @@
     text-align: center;
     cursor: pointer;
   }
-  .vesti-novosti div .vest-novost .naslov:hover {
+  .vesti-nastani div .vest-nastan .naslov:hover {
     text-decoration: underline;
   }
-  .vesti-novosti div .vest-novost .objaveno {
+  .vesti-nastani div .vest-nastan .objaveno {
     flex-direction: row;
     justify-content: left;
     font-size: 3.5vw;
@@ -191,15 +197,15 @@
     color: rgb(102, 102, 102);
     margin-bottom: 2%;
   }
-  .vesti-novosti div .vest-novost .objaveno i {
+  .vesti-nastani div .vest-nastan .objaveno i {
     width: auto;
     height: auto;
     margin: 0 2%;
   }
-  .vesti-novosti .povekje {
+  .vesti-nastani .povekje {
     height: fit-content;
   }
-  .vesti-novosti .povekje button {
+  .vesti-nastani .povekje button {
     border: 0;
     background-color: rgb(8, 80, 109);
     color: white;
@@ -210,10 +216,7 @@
     cursor: pointer;
   }
 
-  .social-links {
-    display: none;
-  }
-
+  /*------------------------------------ Footer ------------------------------------*/
   footer {
     display: flex;
     flex-direction: column;
@@ -270,5 +273,56 @@
     color: maroon;
     font-weight: bold;
     cursor: pointer;
+  }
+  .gimnazijaInfo {
+    width: 100%;
+    margin: auto;
+  }
+  .gimnazijaInfo img {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+  }
+
+  .gimnazijaInfo p {
+    text-align: justify;
+    font-size: 4vw;
+    padding: 5%;
+  }
+  .gimnazijaInfo p i {
+    font-size: 4.4vw;
+  }
+  .gimnazijaInfo p b {
+    font-size: 4.8vw;
+  }
+
+  .vraboteni {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .vraboten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(238, 234, 234);
+    padding: 2% 2%;
+    margin: 1% 0;
+  }
+  .vraboteni .vraboten p {
+    font-size: 5vw;
+    margin: 3% 0;
+  }
+  .vraboteni .vraboten :nth-child(1 of p) {
+    font-weight: bold;
+  }
+  .vraboteni .vraboten :nth-child(2 of p) {
+    font-style: italic;
+  }
+  .vraboteni .vraboten img {
+    margin-bottom: 3%;
+    width: 50vw;
   }
 }

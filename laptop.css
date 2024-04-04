@@ -129,7 +129,7 @@
     padding: 0 4%;
   }
 
-  .vesti-novosti {
+  .vesti-nastani {
     display: flex;
     flex-direction: column;
     width: 90vw;
@@ -139,10 +139,10 @@
     padding: 2% 0;
     margin: auto;
   }
-  .vesti-novosti h1 {
+  .vesti-nastani h1 {
     font-size: 4vw;
   }
-  .vesti-novosti div {
+  .vesti-nastani div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -152,7 +152,7 @@
     height: fit-content;
   }
 
-  .vesti-novosti div .vest-novost {
+  .vesti-nastani div .vest-nastan {
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -161,14 +161,14 @@
     margin: 1% 0;
     flex: 0 0 30%;
   }
-  .vesti-novosti div .vest-novost .slika {
+  .vesti-nastani div .vest-nastan .slika {
     align-items: start;
     width: 100%;
   }
-  .vesti-novosti div .vest-novost .slika img {
+  .vesti-nastani div .vest-nastan .slika img {
     width: 100%;
   }
-  .vesti-novosti div .vest-novost .naslov {
+  .vesti-nastani div .vest-nastan .naslov {
     justify-content: left;
     font-weight: bold;
     font-size: 2vw;
@@ -176,25 +176,25 @@
     padding: 3%;
     cursor: pointer;
   }
-  .vesti-novosti div .vest-novost .naslov:hover {
+  .vesti-nastani div .vest-nastan .naslov:hover {
     text-decoration: underline;
   }
-  .vesti-novosti div .vest-novost .objaveno {
+  .vesti-nastani div .vest-nastan .objaveno {
     justify-content: left;
     font-size: 1.2vw;
     width: 100%;
     color: rgb(102, 102, 102);
     margin-bottom: 2%;
   }
-  .vesti-novosti div .vest-novost .objaveno i {
+  .vesti-nastani div .vest-nastan .objaveno i {
     width: auto;
     height: auto;
     margin: 0 2%;
   }
-  .vesti-novosti .povekje {
+  .vesti-nastani .povekje {
     height: fit-content;
   }
-  .vesti-novosti .povekje button {
+  .vesti-nastani .povekje button {
     border: 0;
     background-color: rgb(8, 80, 109);
     color: white;
@@ -203,7 +203,7 @@
     border-radius: 2vw;
     cursor: pointer;
   }
-  .vesti-novosti .povekje button:hover {
+  .vesti-nastani .povekje button:hover {
     background-color: rgb(0, 70, 95);
   }
   .social-links {
@@ -287,5 +287,56 @@
     color: maroon;
     font-weight: bold;
     cursor: pointer;
+  }
+  .gimnazijaInfo {
+    width: 100%;
+    margin: auto;
+  }
+  .gimnazijaInfo img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+  }
+
+  .gimnazijaInfo p {
+    text-align: justify;
+    font-size: 1.2vw;
+    padding: 0 5%;
+  }
+  .gimnazijaInfo p i {
+    font-size: 1.3vw;
+  }
+  .gimnazijaInfo p b {
+    font-size: 1.8vw;
+  }
+
+  .vraboteni {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+
+  .vraboten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(238, 234, 234);
+    padding: 2% 1%;
+    flex: 0 0 18%;
+  }
+  .vraboteni .vraboten p {
+    font-size: 1.2vw;
+    margin: 3% 0;
+  }
+  .vraboteni .vraboten :nth-child(1 of p) {
+    font-weight: bold;
+  }
+  .vraboteni .vraboten :nth-child(2 of p) {
+    font-style: italic;
+  }
+  .vraboteni .vraboten img {
+    margin-bottom: 3%;
+    width: 15vw;
   }
 }

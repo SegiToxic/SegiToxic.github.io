@@ -5,23 +5,28 @@
 
   header {
     display: flex;
-    width: 100%;
-    padding: 3%;
+    width: 100vw;
+    padding: 3% 5%;
+    box-sizing: border-box;
   }
   header div {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
+    width: 60%;
   }
   header div img {
     width: 100px;
   }
   header div p {
-    margin: 0;
+    margin: 0 5%;
     width: 50%;
     font-size: calc(100% + 3vw);
     font-weight: bold;
+  }
+  header nav {
+    display: flex;
+    justify-content: right;
+    width: 40%;
   }
   header nav #navigation {
     display: none;
@@ -63,7 +68,7 @@
     align-items: center;
     border: 0;
     background: white;
-    font-size: 7vw;
+    font-size: 5vw;
     cursor: pointer;
     width: 8vw;
     height: 8vw;
@@ -132,15 +137,16 @@
     padding: 0 4%;
   }
 
-  .vesti-novosti {
+  .vesti-nastani {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: fit-content;
     align-items: center;
     padding: 2% 0;
+    margin: auto;
   }
-  .vesti-novosti h1 {
+  .vesti-nastani h1 {
     color: black;
     width: 100%;
     height: 9vw;
@@ -148,7 +154,7 @@
     font-size: 7vw;
     margin: 0;
   }
-  .vesti-novosti div {
+  .vesti-nastani div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -157,7 +163,7 @@
     height: inherit;
   }
 
-  .vesti-novosti div .vest-novost {
+  .vesti-nastani div .vest-nastan {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -166,17 +172,20 @@
     margin: 1%;
     flex: 0 0 46%;
   }
-  .vesti-novosti div .vest-novost .slika {
+  .vesti-nastani div .vest-nastan:nth-child(n + 3) {
+    display: none;
+  }
+  .vesti-nastani div .vest-nastan .slika {
     align-items: start;
     width: 100%;
   }
-  .vesti-novosti div .vest-novost .slika img {
+  .vesti-nastani div .vest-nastan .slika img {
     width: 100%;
   }
-  .vesti-novosti div .vest-novost .naslov {
+  .vesti-nastani div .vest-nastan .naslov {
     width: 100%;
   }
-  .vesti-novosti div .vest-novost .naslov p {
+  .vesti-nastani div .vest-nastan .naslov p {
     font-weight: bold;
     font-size: 3.5vw;
     width: 100%;
@@ -186,10 +195,10 @@
     cursor: pointer;
   }
 
-  .vesti-novosti div .vest-novost .naslov:hover {
+  .vesti-nastani div .vest-nastan .naslov:hover {
     text-decoration: underline;
   }
-  .vesti-novosti div .vest-novost .objaveno {
+  .vesti-nastani div .vest-nastan .objaveno {
     flex-direction: row;
     justify-content: left;
     font-size: 1.8vw;
@@ -197,15 +206,15 @@
     color: rgb(102, 102, 102);
     margin-bottom: 2%;
   }
-  .vesti-novosti div .vest-novost .objaveno i {
+  .vesti-nastani div .vest-nastan .objaveno i {
     width: auto;
     height: auto;
     margin: 0 2%;
   }
-  .vesti-novosti .povekje {
+  .vesti-nastani .povekje {
     height: fit-content;
   }
-  .vesti-novosti .povekje button {
+  .vesti-nastani .povekje button {
     border: 0;
     background-color: rgb(8, 80, 109);
     color: white;
@@ -289,6 +298,58 @@
     color: maroon;
     font-weight: bold;
     cursor: pointer;
+  }
+  .gimnazijaInfo {
+    width: 100%;
+    margin: auto;
+  }
+  .gimnazijaInfo img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+  }
+
+  .gimnazijaInfo p {
+    text-align: justify;
+    font-size: 2vw;
+    padding: 0 5%;
+  }
+  .gimnazijaInfo p i {
+    font-size: 2.2vw;
+  }
+  .gimnazijaInfo p b {
+    font-size: 2.4vw;
+  }
+
+  .vraboteni {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .vraboten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(238, 234, 234);
+    padding: 2% 1%;
+    flex: 0 0 31%;
+    margin: auto;
+  }
+
+  .vraboteni .vraboten p {
+    font-size: 3vw;
+    margin: 3% 0;
+  }
+  .vraboteni .vraboten :nth-child(1 of p) {
+    font-weight: bold;
+  }
+  .vraboteni .vraboten :nth-child(2 of p) {
+    font-style: italic;
+  }
+  .vraboteni .vraboten img {
+    margin-bottom: 3%;
+    width: 15vw;
   }
 }
 
