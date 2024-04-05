@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="tablet.css" />
+    <link rel="stylesheet" href="laptop.css" />
+    <link rel="stylesheet" href="max.css" />
+    <link rel="icon" href="../images/logo-gjorce-petrov.svg" />
+    <title>СОУ Ѓорче Петров - Крива Паланка | Нотификации</title>
+  </head>
+  <body>
+    <section>
+      <div class="account">
+        <button class="notifications" type="button">
+          <img src="images/icons/notification.svg" alt="Notifications" />
+        </button>
+        <button type="button" class="profile" onclick="toggleProfileDropdown()">
+          <img src="images/icons/profile.svg" alt="Profile" />
+        </button>
+      </div>
+    </section>
+    <div id="accountDropdown">
+      <div class="options">
+        <a href="">Регистрација</a>
+        <a href="">Логин</a>
+        <a href="">Поставувања</a>
+        <a href="">Одјави се</a>
+      </div>
+    </div>
+    <header>
+      <div>
+        <a href="index.html"><img src="images/logo-gjorce-petrov.svg" /></a>
+        <p>Ѓорче Петров</p>
+      </div>
+      <nav>
+        <button type="button" id="menu-button" class="menu" onclick="openNav()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="navigation">
+          <a onclick="closeNav()" class="close mobile"
+            ><i class="fas fa-window-close"></i
+          ></a>
+          <div class="center">
+            <a href="zaGimnazijata.html">За Гимназијата</a>
+            <a href="">Струки</a>
+            <a href="">Уписи</a>
+            <a href="vesti-nastani.html">Вести и Настани</a>
+            <a href="">Проекти</a>
+            <a href="">Часови</a>
+            <a class="mobile" href="">Логин</a>
+            <a class="mobile" href="">Регистрација</a>
+          </div>
+
+          <div class="social-links mobile" id="socials" style="display: none">
+            <a
+              href="https://www.youtube.com/@sougorcepetrovkrivapalanka4547"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.facebook.com/gjorcepetrov" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/uz_gjorchepetrov/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="social-links">
+      <a
+        href="https://www.youtube.com/@sougorcepetrovkrivapalanka4547"
+        target="_blank"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a href="https://www.facebook.com/gjorcepetrov" target="_blank"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
+      <a href="https://www.instagram.com/uz_gjorchepetrov/" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+    <div class="notifikacii">
+      <div class="notifikacija">
+        <div class="left">
+          <div class="tekst">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            quas sunt nostrum culpa labore cupiditate, eius, molestiae
+            architecto rem, omnis magnam facilis aut laborum deserunt ratione?
+            Iusto, eveniet. Doloremque, ex!
+          </div>
+          <div class="pratena">
+            <p>20 Maj 2024, 10:20</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="delete">
+            <a href=""><i class="fa-solid fa-trash-can"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/29eea0312f.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

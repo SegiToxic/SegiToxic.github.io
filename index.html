@@ -14,14 +14,26 @@
   <body>
     <section>
       <div class="account">
-        <button class="notifications" type="button">
+        <button
+          class="notifications"
+          type="button"
+          onclick="location.href='notifikacii.html'"
+        >
           <img src="images/icons/notification.svg" alt="Notifications" />
         </button>
-        <button type="button" class="profile">
+        <button type="button" class="profile" onclick="toggleProfileDropdown()">
           <img src="images/icons/profile.svg" alt="Profile" />
         </button>
       </div>
     </section>
+    <div id="accountDropdown">
+      <div class="options">
+        <a href="">Регистрација</a>
+        <a href="">Логин</a>
+        <a href="">Поставувања</a>
+        <a href="">Одјави се</a>
+      </div>
+    </div>
     <header>
       <div>
         <a href="index.html"><img src="images/logo-gjorce-petrov.svg" /></a>
@@ -33,8 +45,8 @@
         </button>
         <div id="navigation">
           <a onclick="closeNav()" class="close mobile"
-          ><i class="fas fa-window-close"></i
-            ></a>
+            ><i class="fas fa-window-close"></i
+          ></a>
           <div class="center">
             <a href="zaGimnazijata.html">За Гимназијата</a>
             <a href="">Струки</a>
@@ -61,7 +73,7 @@
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </div>
-        </ul>
+        </div>
       </nav>
     </header>
     <div class="content">

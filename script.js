@@ -1,5 +1,8 @@
 const nav = document.getElementById("navigation");
+const accDropdown = document.getElementById("accountDropdown");
 const socials = document.getElementById("socials");
+
+accDropdown.style.display = "none";
 
 function openNav() {
   if (window.innerWidth < 700) socials.style.display = "flex";
@@ -27,6 +30,14 @@ function closeNav() {
   document.documentElement.style.overflowY = "auto";
 }
 
+function toggleProfileDropdown() {
+  if (accDropdown.style.display == "none") {
+    accDropdown.style.display = "flex";
+  } else {
+    accDropdown.style.display = "none";
+  }
+}
+
 function checkScreenWidth() {
   const screenWidth = window.innerWidth;
   if (screenWidth >= 1024 || screenWidth < 700) {
@@ -36,6 +47,7 @@ function checkScreenWidth() {
   if (screenWidth >= 1024) {
     nav.style.display = "flex";
     socials.style.display = "none";
+    document.documentElement.style.overflowY = "auto";
   } else {
     nav.style.display = "none";
     socials.style.display = "none";
@@ -43,5 +55,3 @@ function checkScreenWidth() {
 }
 
 window.addEventListener("resize", checkScreenWidth);
-
-websiteLoad();
