@@ -28,7 +28,31 @@
   section button:hover img {
     filter: contrast(20%);
   }
-
+  #accountDropdown {
+    position: absolute;
+    display: none;
+    width: 15vw;
+    height: 20vw;
+    background-color: rgba(0, 70, 95, 0.7);
+    backdrop-filter: blur(10px);
+    right: 1vw;
+    border-radius: 0 0 2vw 2vw;
+    z-index: 1;
+  }
+  #accountDropdown .options {
+    display: inherit;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #accountDropdown .options a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: 70%;
+    font-size: 1.2vw;
+  }
   header {
     display: flex;
     padding: 0 2% 2%;
@@ -61,7 +85,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
-    width: 70%;
+    width: 100%;
   }
   header nav #navigation .center {
     width: 100%;
@@ -350,5 +374,163 @@
   .vraboteni .vraboten img {
     margin-bottom: 3%;
     width: 15vw;
+  }
+  .notifikacii {
+    width: 100vw;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+  .notifikacija {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+  }
+  .notifikacija .left {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 1% 0 0 2%;
+  }
+  .notifikacija .left .tekst {
+    width: 95%;
+    font-size: 1vw;
+    text-align: justify;
+  }
+  .notifikacija .left .pratena {
+    width: 100%;
+    padding: 1% 0 0.5%;
+  }
+  .notifikacija .left .pratena p {
+    margin: 0;
+    color: gray;
+    font-size: 1vw;
+  }
+
+  .notifikacija .right .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .notifikacija .right .delete a {
+    color: darkred;
+    font-size: 2vw;
+  }
+  .notifikacija .right .delete a:hover {
+    font-size: 2.3vw;
+  }
+  .notifikacija .right {
+    display: flex;
+    align-items: center;
+    width: 5%;
+  }
+  .RegisterLogin {
+    display: flex;
+    width: 80vw;
+    height: 85vh;
+    box-sizing: border-box;
+    background: rgba(223, 220, 220, 0.623);
+    margin: 4% auto;
+    flex-direction: column;
+    border-radius: 2vw;
+  }
+  .RegisterLogin .choice {
+    display: inherit;
+    width: 100%;
+    margin: 2%;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .RegisterLogin button {
+    padding: 1vw 3vw;
+    border-radius: 5vw;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1vw;
+    margin: 0 2%;
+    background-color: rgb(191, 205, 207);
+    border: 0;
+  }
+  .RegisterLogin button:hover {
+    background-color: rgb(202, 218, 212);
+  }
+  .RegisterLogin .neznam {
+    display: inherit;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    justify-content: space-around;
+  }
+  .RegisterLogin .choice .right {
+    display: inherit;
+    width: 50vw;
+    justify-content: right;
+  }
+  .RegisterLogin .choice .right a {
+    color: black;
+    font-size: 2vw;
+  }
+  .RegisterLogin .choice .right a:hover {
+    color: rgb(95, 95, 95);
+  }
+  .RegisterLogin .neznam .text {
+    width: 48%;
+    background-color: rgb(220, 220, 220);
+    padding: 0 2%;
+    box-sizing: border-box;
+    border-radius: 2vw 0 0 2vw;
+  }
+  .RegisterLogin .neznam .text h1 {
+    font-size: 3vw;
+  }
+  .RegisterLogin .neznam .text p {
+    font-size: 1.3vw;
+    text-align: justify;
+  }
+  .RegisterLogin .neznam .main {
+    width: 48%;
+    height: 100%;
+    background-color: rgb(220, 220, 220);
+    border-radius: 0 2vw 2vw 0;
+  }
+  .RegisterLogin .neznam .main form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .RegisterLogin .neznam .main input {
+    margin: 2% 0;
+    font-size: 1vw;
+    padding: 1%;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    outline: 0;
+  }
+  .RegisterLogin .neznam .main input::placeholder {
+    color: black;
+  }
+  .RegisterLogin .neznam .main select {
+    background-color: rgb(220, 220, 220);
+    border: 0;
+    font-size: 1.2vw;
+    font-weight: bold;
+    outline: 0;
+  }
+  .RegisterLogin .neznam .main .neznam2 {
+    margin-top: 2%;
+  }
+  .RegisterLogin .neznam .main .neznam2 button {
+    background-color: rgb(255, 255, 255);
+  }
+  .RegisterLogin .neznam .main .neznam2 button:hover {
+    background-color: rgb(241, 241, 241);
   }
 }

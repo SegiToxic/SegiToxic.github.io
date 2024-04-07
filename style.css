@@ -10,3 +10,19 @@ body {
 i {
   overflow: hidden;
 }
+.bg-image {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgb(13, 76, 192),
+    rgb(158, 180, 252)
+  );
+}
+.RegisterLogin {
+  backdrop-filter: blur(10px);
+}

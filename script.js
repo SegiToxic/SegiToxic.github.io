@@ -1,6 +1,6 @@
 const nav = document.getElementById("navigation");
-const accDropdown = document.getElementById("accountDropdown");
 const socials = document.getElementById("socials");
+const accDropdown = document.getElementById("accountDropdown");
 
 accDropdown.style.display = "none";
 
@@ -38,6 +38,29 @@ function toggleProfileDropdown() {
   }
 }
 
+function loginChoice() {
+  const naslov = document.getElementById("registerloginNaslov");
+  const text = document.getElementById("registerloginText");
+  const kopce = document.getElementById("registerloginButton");
+  const registerContent = document.getElementById("register");
+
+  naslov.textContent = "Login";
+  text.textContent = "Logirajte se za da imate pristap do vasiot akaunt.";
+  registerContent.style.display = "none";
+  kopce.textContent = "Логирај се";
+}
+function registerChoice() {
+  const naslov = document.getElementById("registerloginNaslov");
+  const text = document.getElementById("registerloginText");
+  const kopce = document.getElementById("registerloginButton");
+  const registerContent = document.getElementById("register");
+
+  naslov.textContent = "Register";
+  text.textContent = "Registrirajte se od dek znam zs.";
+  registerContent.style.display = "flex";
+  kopce.textContent = "Регистрирај се";
+}
+
 function checkScreenWidth() {
   const screenWidth = window.innerWidth;
   if (screenWidth >= 1024 || screenWidth < 700) {
@@ -51,7 +74,10 @@ function checkScreenWidth() {
   } else {
     nav.style.display = "none";
     socials.style.display = "none";
+    accDropdown.style.display = "none";
   }
 }
 
 window.addEventListener("resize", checkScreenWidth);
+
+websiteLoad();
