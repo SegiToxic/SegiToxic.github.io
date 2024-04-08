@@ -491,6 +491,59 @@
     display: none;
     margin-top: 2vw;
   }
+  .strukiHeader {
+    font-size: 4vw;
+  }
+  .struki {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .struki .struka {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: row;
+    width: 48%;
+    padding: 1%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin: 1%;
+  }
+  .struki .struka .ikona {
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+  .struki .struka .ikona img {
+    width: 6vw;
+    font-size: 1.5vw;
+  }
+  .struki .struka .podatoci {
+    flex-direction: column;
+    width: 85%;
+  }
+  .struki .struka .podatoci .ime {
+    font-weight: bold;
+    font-size: 2.3vw;
+  }
+  .struki .struka .podatoci .deskripcija {
+    font-size: 1.7vw;
+    margin-top: 1vw;
+  }
+  .upisi {
+    box-sizing: border-box;
+    padding: 1%;
+    overflow: auto;
+  }
+  .upisi h1 {
+    font-size: 4vw;
+  }
+  .upisi ul li {
+    font-size: 1.7vw;
+    margin: 3vw 0;
+    text-align: justify;
+  }
 }
 
 @keyframes fade-in {

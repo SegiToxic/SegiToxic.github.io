@@ -85,7 +85,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
-    width: 100%;
+    width: 80%;
   }
   header nav #navigation .center {
     width: 100%;
@@ -508,5 +508,60 @@
     font-size: 1vw;
     display: none;
     margin-top: 1.5vw;
+  }
+  .strukiHeader {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  .struki {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .struki .struka {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: row;
+    width: 48%;
+    padding: 1%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin: 1%;
+  }
+  .struki .struka .ikona {
+    display: flex;
+    align-items: center;
+    width: 15%;
+  }
+  .struki .struka .ikona img {
+    width: 3vw;
+  }
+  .struki .struka .podatoci {
+    flex-direction: column;
+    width: 85%;
+  }
+  .struki .struka .podatoci .ime {
+    font-weight: bold;
+    font-size: 1.4vw;
+  }
+  .struki .struka .podatoci .deskripcija {
+    font-size: 1vw;
+    margin-top: 1vw;
+  }
+  .upisi {
+    box-sizing: border-box;
+    padding: 1%;
+    overflow: auto;
+  }
+  .upisi ul {
+    padding: 0 1%;
+  }
+  .upisi h1 {
+    font-size: 2.2vw;
+  }
+  .upisi ul li {
+    font-size: 1.1vw;
+    line-height: 3vw;
   }
 }

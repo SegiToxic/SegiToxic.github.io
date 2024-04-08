@@ -45,8 +45,8 @@ function loginChoice() {
   const registerContent = document.getElementById("register");
   const resetPasswordText = document.getElementById("resetPassword");
 
-  naslov.textContent = "Login";
-  text.textContent = "Logirajte se za da imate pristap do vasiot akaunt.";
+  naslov.textContent = "Логирање";
+  text.textContent = "Логирајте се да добиете пристап до вашиот акаунт.";
   registerContent.style.display = "none";
   resetPasswordText.style.display = "block";
   kopce.textContent = "Логирај се";
@@ -58,8 +58,9 @@ function registerChoice() {
   const registerContent = document.getElementById("register");
   const resetPasswordText = document.getElementById("resetPassword");
 
-  naslov.textContent = "Register";
-  text.textContent = "Registrirajte se od dek znam zs.";
+  naslov.textContent = "Регистрација";
+  text.textContent =
+    "Регистрирајте се за да добивате известувања и да ги следите најновите вести кое училиштето ги нуди.";
   registerContent.style.display = "flex";
   resetPasswordText.style.display = "none";
   kopce.textContent = "Регистрирај се";
@@ -67,7 +68,10 @@ function registerChoice() {
 
 function checkScreenWidth() {
   const screenWidth = window.innerWidth;
-  if (screenWidth >= 1024 || screenWidth < 700) {
+  if (screenWidth >= 1024) {
+    nav.style.width = "80%";
+    nav.style.animation = "0";
+  } else if (screenWidth < 700) {
     nav.style.width = "100%";
     nav.style.animation = "0";
   }
