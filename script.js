@@ -43,10 +43,12 @@ function loginChoice() {
   const text = document.getElementById("registerloginText");
   const kopce = document.getElementById("registerloginButton");
   const registerContent = document.getElementById("register");
+  const resetPasswordText = document.getElementById("resetPassword");
 
   naslov.textContent = "Login";
   text.textContent = "Logirajte se za da imate pristap do vasiot akaunt.";
   registerContent.style.display = "none";
+  resetPasswordText.style.display = "block";
   kopce.textContent = "Логирај се";
 }
 function registerChoice() {
@@ -54,10 +56,12 @@ function registerChoice() {
   const text = document.getElementById("registerloginText");
   const kopce = document.getElementById("registerloginButton");
   const registerContent = document.getElementById("register");
+  const resetPasswordText = document.getElementById("resetPassword");
 
   naslov.textContent = "Register";
   text.textContent = "Registrirajte se od dek znam zs.";
   registerContent.style.display = "flex";
+  resetPasswordText.style.display = "none";
   kopce.textContent = "Регистрирај се";
 }
 

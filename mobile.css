@@ -116,7 +116,7 @@
     width: 100%;
     height: fit-content;
     color: white;
-    background-color: rgb(8, 80, 109);
+    background-color: rgb(50, 78, 155);
     font-weight: bold;
     padding: 0 2%;
     align-items: center;
@@ -211,7 +211,7 @@
   }
   .vesti-nastani .povekje button {
     border: 0;
-    background-color: rgb(8, 80, 109);
+    background-color: rgb(50, 78, 155);
     color: white;
     font-size: 4.5vw;
     padding: 2vw 0;
@@ -299,36 +299,6 @@
   .gimnazijaInfo p b {
     font-size: 4.8vw;
   }
-
-  .vraboteni {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .vraboten {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    background-color: rgb(238, 234, 234);
-    padding: 2% 2%;
-    margin: 1% 0;
-  }
-  .vraboteni .vraboten p {
-    font-size: 5vw;
-    margin: 3% 0;
-  }
-  .vraboteni .vraboten :nth-child(1 of p) {
-    font-weight: bold;
-  }
-  .vraboteni .vraboten :nth-child(2 of p) {
-    font-style: italic;
-  }
-  .vraboteni .vraboten img {
-    margin-bottom: 3%;
-    width: 50vw;
-  }
   .notifikacii {
     width: 100vw;
     padding: 0 5%;
@@ -386,13 +356,12 @@
 
   .RegisterLogin {
     display: flex;
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
     box-sizing: border-box;
     background: rgba(223, 220, 220, 0.623);
     margin: auto;
     flex-direction: column;
-    border-radius: 2vw;
     align-items: center;
   }
   .RegisterLogin .choice {
@@ -427,12 +396,12 @@
   }
   .RegisterLogin .choice .right {
     display: inherit;
-    width: 8vw;
+    width: 25vw;
     justify-content: right;
   }
   .RegisterLogin .choice .right a {
     color: black;
-    font-size: 5vw;
+    font-size: 7vw;
     margin-top: 1vw;
   }
   .RegisterLogin .choice .right a:hover {
@@ -440,7 +409,7 @@
   }
   .RegisterLogin .neznam .text {
     width: 100%;
-    height: 35vw;
+    height: 50%;
     background-color: rgb(220, 220, 220);
     padding: 2% 5%;
     box-sizing: border-box;
@@ -493,6 +462,7 @@
   .RegisterLogin .neznam .main .neznam2 {
     flex-direction: row;
     width: 100%;
+    height: 40vw;
     box-sizing: border-box;
   }
   .RegisterLogin .neznam .main .neznam2 button {
@@ -503,5 +473,10 @@
   }
   .RegisterLogin .neznam .main .neznam2 button:hover {
     background-color: rgb(241, 241, 241);
+  }
+  .RegisterLogin .neznam .main .neznam2 #resetPassword {
+    font-size: 3vw;
+    display: none;
+    margin-top: 8vw;
   }
 }

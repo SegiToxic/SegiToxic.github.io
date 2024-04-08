@@ -132,7 +132,7 @@
     width: 100%;
     height: 100%;
     color: white;
-    background-color: rgb(8, 80, 109);
+    background-color: rgb(50, 78, 155);
     font-weight: bold;
     padding: 0 2%;
     align-items: center;
@@ -223,7 +223,7 @@
   }
   .vesti-nastani .povekje button {
     border: 0;
-    background-color: rgb(8, 80, 109);
+    background-color: rgb(50, 78, 155);
     color: white;
     font-size: 2vw;
     padding: 1vw 3vw;
@@ -335,36 +335,6 @@
   }
   .gimnazijaInfo p b {
     font-size: 1.8vw;
-  }
-
-  .vraboteni {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
-  }
-
-  .vraboten {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(238, 234, 234);
-    padding: 2% 1%;
-    flex: 0 0 18%;
-  }
-  .vraboteni .vraboten p {
-    font-size: 1.2vw;
-    margin: 3% 0;
-  }
-  .vraboteni .vraboten :nth-child(1 of p) {
-    font-weight: bold;
-  }
-  .vraboteni .vraboten :nth-child(2 of p) {
-    font-style: italic;
-  }
-  .vraboteni .vraboten img {
-    margin-bottom: 3%;
-    width: 15vw;
   }
 
   .notifikacii {
@@ -496,9 +466,13 @@
     padding: 5%;
     box-sizing: border-box;
   }
+  .RegisterLogin .neznam .main form #register {
+    flex-wrap: wrap;
+  }
   .RegisterLogin .neznam .main input {
-    margin: 2% 0;
-    font-size: 1vw;
+    margin: 2%;
+    margin-left: 0;
+    font-size: 1.3vw;
     padding: 1%;
     border: 0;
     border-bottom: 1px solid black;
@@ -524,5 +498,43 @@
   }
   .RegisterLogin .neznam .main .neznam2 button:hover {
     background-color: rgb(241, 241, 241);
+  }
+  .RegisterLogin .neznam .main .neznam2 #resetPassword {
+    font-size: 1.2vw;
+    display: none;
+    margin-top: 2vw;
+  }
+  .struki {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .struki .struka {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 48%;
+    padding: 1%;
+    box-sizing: border-box;
+    margin-top: 1%;
+  }
+  .struki .struka .ikona {
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+  .struki .struka .podatoci {
+    flex-direction: column;
+  }
+  .struki .struka .podatoci .ime {
+    font-weight: bold;
+    font-size: 1.8vw;
+  }
+  .struki .struka .podatoci .deskripcija {
+    font-size: 1.4vw;
+    margin-top: 1vw;
   }
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="laptop.css" />
     <link rel="stylesheet" href="max.css" />
     <link rel="icon" href="../images/logo-gjorce-petrov.svg" />
-    <title>СОУ Ѓорче Петров - Крива Паланка | Вести и Настани</title>
+    <title>СОУ Ѓорче Петров - Крива Паланка | Струки</title>
   </head>
   <body>
     <section>
@@ -28,8 +28,7 @@
     </section>
     <div id="accountDropdown">
       <div class="options">
-        <a href="">Регистрација</a>
-        <a href="">Логин</a>
+        <a href="loginregister.html">Профил</a>
         <a href="">Поставувања</a>
         <a href="">Одјави се</a>
       </div>
@@ -53,11 +52,13 @@
             <a href="">Уписи</a>
             <a href="vesti-nastani.html">Вести и Настани</a>
             <a href="">Часови</a>
-            <a class="mobile" href="">Логин</a>
-            <a class="mobile" href="">Регистрација</a>
-            <a class="mobile" href="">Нотификации</a>
+            <a class="mobile" href="loginregister.html">Профил</a>
+            <a class="mobile" href="notifikacii.html">Нотификации</a>
             <a class="mobile" href="">Поставувања</a>
             <a class="mobile" href="">Одјави се</a>
+            <!--Postavuvanja i Odjavi se ke se pokazat samo kd ke se login/register
+              Ako mislis dek e bolje staj samo Register ili Login i posle na taa
+            strana ke se bira da li da se login ili da se register ako ne ostaj gi dvete -->
           </div>
 
           <div class="social-links mobile" id="socials" style="display: none">
@@ -78,49 +79,28 @@
         </div>
       </nav>
     </header>
-    <div class="vesti-nastani">
-      <h1>Вести и Настани</h1>
-      <div>
-        <div class="vest-nastan">
-          <div class="slika">
-            <img src="../images/test-slika.png" alt="test slika" />
-          </div>
-          <div class="naslov"><p>Светски ден на бубрегот</p></div>
-          <div class="objaveno">
-            <i class="fa-solid fa-calendar"></i>
-            14 Март 2024 by Елена Ѓорѓиевска
-          </div>
+    <div class="social-links">
+      <a
+        href="https://www.youtube.com/@sougorcepetrovkrivapalanka4547"
+        target="_blank"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a href="https://www.facebook.com/gjorcepetrov" target="_blank"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
+      <a href="https://www.instagram.com/uz_gjorchepetrov/" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+    <div class="struki">
+      <div class="struka">
+        <div class="ikona">
+          <img src="" alt="Природно - Математичко Подрачје" />
         </div>
-        <div class="vest-nastan">
-          <div class="slika">
-            <img src="../images/test-slika.png" alt="test slika" />
-          </div>
-          <div class="naslov"><p>Светски ден на бубрегот</p></div>
-          <div class="objaveno">
-            <i class="fa-solid fa-calendar"></i>
-            14 Март 2024 by Елена Ѓорѓиевска
-          </div>
-        </div>
-        <div class="vest-nastan">
-          <div class="slika">
-            <img src="../images/mladite.png" alt="test slika" />
-          </div>
-          <div class="naslov">
-            <p>Новинарски спринт во СОУ „Ѓорче Петров“</p>
-          </div>
-          <div class="objaveno">
-            <i class="fa-solid fa-calendar"></i>
-            08 Март 2024 by Елена Ѓорѓиевска
-          </div>
-        </div>
-        <div class="vest-nastan">
-          <div class="slika">
-            <img src="../images/hemija.jpg" alt="test slika" />
-          </div>
-          <div class="naslov"><p>Општински натпревар по хемија</p></div>
-          <div class="objaveno">
-            <i class="fa-solid fa-calendar"></i>
-            18 Фебруари 2024 by Елена Ѓорѓиевска
+        <div class="podatoci">
+          <div class="ime">Природно - Математичко Подрачје</div>
+          <div class="deskripcija">
+            60 поени<br />20 ученика<br />1 паралелка
           </div>
         </div>
       </div>
@@ -132,28 +112,29 @@
           1330 Крива Паланка<br />
           Република Северна Македонија<br />
           031/375-025<br />
-          <a href="mailto:sougorcepetrov@yahoo.com">sougorcepetrov@yahoo.com</a>
-          <br />
+          <a href="mailto:sougorcepetrov@yahoo.com">sougorcepetrov@yahoo.com</a
+          ><br />
           <b>Изработиле:</b><br />
           Филип Стојановски<br />
           Сергеј Крстевски
         </p>
       </div>
+
       <div class="contact">
         <form action="">
           <div class="info">
-            <p>Ime</p>
+            <p>Име</p>
             <input type="text" />
-            <p>Prezime</p>
+            <p>Презиме</p>
             <input type="text" />
           </div>
           <div class="email">
             <p>Email *</p>
             <input type="email" !required />
-            <p>Naslov</p>
+            <p>Наслов</p>
             <input type="text" />
 
-            <p>Napisete poraka...</p>
+            <p>Напишете порака...</p>
             <textarea
               name="poraka"
               id="poraka"
@@ -169,9 +150,4 @@
     </footer>
     <p class="copyright">© 2019. Сите права се задржани</p>
   </body>
-  <script
-    src="https://kit.fontawesome.com/29eea0312f.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="script.js"></script>
 </html>

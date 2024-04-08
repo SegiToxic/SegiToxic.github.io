@@ -346,35 +346,6 @@
     font-size: 1.8vw;
   }
 
-  .vraboteni {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
-  }
-
-  .vraboten {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(238, 234, 234);
-    padding: 2% 1%;
-    flex: 0 0 18%;
-  }
-  .vraboteni .vraboten p {
-    font-size: 1.2vw;
-    margin: 3% 0;
-  }
-  .vraboteni .vraboten :nth-child(1 of p) {
-    font-weight: bold;
-  }
-  .vraboteni .vraboten :nth-child(2 of p) {
-    font-style: italic;
-  }
-  .vraboteni .vraboten img {
-    margin-bottom: 3%;
-    width: 15vw;
-  }
   .notifikacii {
     width: 100vw;
     padding: 0 5%;
@@ -532,5 +503,10 @@
   }
   .RegisterLogin .neznam .main .neznam2 button:hover {
     background-color: rgb(241, 241, 241);
+  }
+  .RegisterLogin .neznam .main .neznam2 #resetPassword {
+    font-size: 1vw;
+    display: none;
+    margin-top: 1.5vw;
   }
 }

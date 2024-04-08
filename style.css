@@ -10,7 +10,7 @@ body {
 i {
   overflow: hidden;
 }
-.bg-image {
+.bg-color {
   display: flex;
   position: fixed;
   width: 100vw;
@@ -25,4 +25,7 @@ i {
 }
 .RegisterLogin {
   backdrop-filter: blur(10px);
+}
+#accountDropdown .options a:hover {
+  text-decoration: underline;
 }
