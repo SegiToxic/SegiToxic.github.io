@@ -53,6 +53,10 @@
     text-align: left;
     font-size: 5vw;
   }
+  header nav #navigation .admin {
+    color: maroon;
+    font-weight: bold;
+  }
   header nav #navigation a:active {
     text-decoration: underline;
   }
@@ -536,5 +540,58 @@
     font-size: 3vw;
     margin: 3vw 0;
     text-align: justify;
+  }
+  .functions {
+    display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 2%;
+    justify-content: space-between;
+  }
+  .functions .funkcija {
+    display: inherit;
+    flex-direction: column;
+    width: 45%;
+  }
+  .functions .funkcija .deskripcija {
+    color: gray;
+    font-size: 3vw;
+    text-align: justify;
+  }
+  .functions .funkcija button {
+    width: 100%;
+    padding: 0.5vw 2vw;
+    font-size: 3vw;
+    background: white;
+    cursor: pointer;
+  }
+  .functions .funkcija button:hover {
+    background: rgb(238, 238, 238);
+  }
+  #kreacija {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 96vw;
+    box-sizing: border-box;
+    margin: 2vw auto;
+    border: 2px solid black;
+    padding-bottom: 2%;
+  }
+  #kreacija p {
+    font-size: 3vw;
+  }
+  #kreacija div {
+    width: 90%;
+    margin: auto;
+  }
+  #kreacija .naslov input,
+  #kreacija .sodrzina input {
+    width: 90%;
+    padding: 1%;
+    font-size: 3vw;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
   }
 }

@@ -96,6 +96,10 @@
     text-decoration: none;
     font-size: 1.3vw;
   }
+  header nav #navigation .admin {
+    color: maroon;
+    font-weight: bold;
+  }
   header nav #navigation a:hover {
     color: rgb(24, 75, 184);
   }
@@ -563,5 +567,56 @@
   .upisi ul li {
     font-size: 1.1vw;
     line-height: 3vw;
+  }
+  .functions {
+    display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 2%;
+    justify-content: space-between;
+  }
+  .functions .funkcija {
+    display: inherit;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+  }
+  .functions .funkcija .deskripcija {
+    color: gray;
+    font-size: 1vw;
+  }
+  .functions .funkcija button {
+    width: 50%;
+    padding: 0.5vw 2vw;
+    font-size: 1vw;
+    background: white;
+    cursor: pointer;
+  }
+  .functions .funkcija button:hover {
+    background: rgb(238, 238, 238);
+  }
+  #kreacija {
+    display: none;
+    justify-content: space-evenly;
+    width: 96vw;
+    box-sizing: border-box;
+    margin: 2vw auto;
+    border: 2px solid black;
+    padding-bottom: 2%;
+  }
+  #kreacija p {
+    font-size: 1vw;
+  }
+  #kreacija div {
+    width: 30%;
+  }
+  #kreacija .naslov input,
+  #kreacija .sodrzina input {
+    width: 90%;
+    padding: 1%;
+    font-size: 1vw;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
   }
 }

@@ -66,6 +66,25 @@ function registerChoice() {
   kopce.textContent = "Регистрирај се";
 }
 
+function kreiraj(id) {
+  const kreacija = document.getElementById("kreacija");
+  const slikaText = document.getElementById("slikaText");
+  const naslovText = document.getElementById("naslovText");
+  const sodrzinaText = document.getElementById("sodrzinaText");
+
+  kreacija.style.display = "flex";
+  if (id == 1) {
+    slikaText.parentElement.style.display = "none";
+    naslovText.textContent = "Напишете го насловот на оваа Нотификација.";
+    sodrzinaText.textContent = "Напишете ја пораката.";
+  } else {
+    slikaText.parentElement.style.display = "block";
+    naslovText.textContent = "Напишете го насловот на оваа Вест или Настан.";
+    sodrzinaText.textContent =
+      "Напишете ја содржината на оваа Вест или Настан.";
+  }
+}
+
 function checkScreenWidth() {
   const screenWidth = window.innerWidth;
   if (screenWidth >= 1024) {
