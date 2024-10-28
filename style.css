@@ -1,0 +1,280 @@
+:root {
+  --languages-background-color: #0d3fac;
+  --databases-background-color: #d81959;
+  --quickinfo-height: 0;
+}
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+body,
+html {
+  background-color: rgb(5, 5, 5);
+  overflow-x: hidden;
+}
+i {
+  font-family: initial;
+}
+
+.container {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column-reverse;
+  box-sizing: border-box;
+}
+.section {
+  margin-bottom: 15%;
+}
+.quickInfo {
+  position: relative;
+  width: 100%;
+}
+.fixed {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(12, 12, 12, 0.884);
+  bottom: 0;
+  left: 0;
+  padding: 1% 5% 15%;
+  box-sizing: border-box;
+  backdrop-filter: blur(2px);
+  transform: translateY(var(--quickinfo-height));
+  transition: 0.8s;
+}
+.fixed .minimize {
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5%;
+  padding: 0;
+  font-size: 10vw;
+  background-color: rgba(255, 255, 255, 0.048);
+}
+
+.quickInfo img {
+  width: 30%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.quickInfo .name {
+  font-weight: bold;
+  font-size: 8vw;
+  margin: 2% 0;
+}
+.quickInfo .expertise {
+  font-weight: 400;
+  font-size: 5vw;
+  color: darkgray;
+  margin: 1% 0;
+}
+.quickInfo .location {
+  position: relative;
+  border-radius: 2vw;
+  margin: 5% 0;
+  color: darkgray;
+  font-size: 5vw;
+  text-decoration: none;
+}
+.quickInfo .location .underline {
+  width: 0;
+}
+.quickInfo .location i {
+  color: rgb(199, 3, 3);
+  margin-right: 2%;
+}
+.quickInfo .socials {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.quickInfo .socials a {
+  text-decoration: none;
+  font-size: 7vw;
+}
+.detailedInfo .title {
+  font-size: 10vw;
+  font-weight: bold;
+  margin: 2% 0;
+}
+.detailedInfo .aboutMe .info {
+  font-size: 4.5vw;
+  margin: 2% 0;
+  text-align: justify;
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#skills .category {
+  font-size: 7vw;
+  font-weight: bold;
+  margin: 5% 0;
+}
+#skills ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1%;
+  list-style: none;
+  width: 100%;
+  font-size: 5vw;
+  flex-wrap: wrap;
+}
+#skills ul li {
+  padding: 1% 4%;
+  border-radius: 3vw;
+  margin: 1.5% 2% 1.5% 0;
+  color: #fff;
+}
+#skills .languages li {
+  background-color: var(--languages-background-color);
+}
+#skills .databases li {
+  background-color: var(--databases-background-color);
+}
+
+#projects {
+  width: 100%;
+}
+
+#projects .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+#projects .project .image {
+  width: 80%;
+  margin: auto;
+}
+#projects .project .image img {
+  width: 100%;
+}
+#projects .project .information {
+  width: 100%;
+}
+#projects .project .information .projectTitle {
+  font-size: 10vw;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 3%;
+}
+#projects .project .information .projectContent {
+  font-size: 5vw;
+  text-align: justify;
+}
+#projects .project .information .usedSkills {
+  margin: 5% 0;
+}
+#projects .project .information .usedSkills p {
+  background-color: var(--languages-background-color);
+  color: var(--languages-color);
+  border-radius: 3vw;
+  width: fit-content;
+  padding: 1% 3%;
+  font-size: 5vw;
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 2% 6%;
+    flex-direction: row;
+  }
+  .quickInfo {
+    width: 30%;
+  }
+  .fixed {
+    flex-direction: column;
+    background: none;
+    backdrop-filter: blur(0);
+    padding: 0;
+    bottom: initial;
+    left: initial;
+  }
+  .fixed .minimize {
+    display: none;
+  }
+  .quickInfo img {
+    width: 40%;
+  }
+  .quickInfo .name {
+    font-size: 2.5vw;
+  }
+  .quickInfo .expertise {
+    font-size: 1.3vw;
+  }
+  .quickInfo .location {
+    border-radius: 2vw;
+    margin: 7% 0;
+    font-size: 1.3vw;
+  }
+  .quickInfo .location .underline {
+    position: absolute;
+    bottom: -30%;
+    width: 0;
+    height: 10%;
+    background-color: white;
+    transition: 0.7s;
+  }
+  .quickInfo .location:hover .underline {
+    display: block;
+    width: 65%;
+    transition: 0.7s;
+  }
+  .quickInfo .socials {
+    width: 50%;
+  }
+  .quickInfo .socials a {
+    cursor: pointer;
+    font-size: 2vw;
+    transition: 0.3s;
+  }
+  .quickInfo .socials a:hover {
+    font-size: 3vw;
+    transition: 0.3s;
+  }
+
+  .detailedInfo {
+    width: 60%;
+  }
+  .section {
+    margin-bottom: 5%;
+  }
+  .detailedInfo .title {
+    font-size: 2.5vw;
+  }
+  .detailedInfo .aboutMe .info {
+    font-size: 1.2vw;
+  }
+  #skills .category {
+    font-size: 1.8vw;
+  }
+  #skills ul {
+    font-size: 1.3vw;
+  }
+  #skills ul li {
+    padding: 0.5% 2%;
+  }
+
+  #projects .project {
+    flex-direction: row;
+  }
+  #projects .project .image {
+    width: 45%;
+  }
+  #projects .project .information {
+    width: 55%;
+  }
+  #projects .project .information .projectTitle {
+    font-size: 2.5vw;
+  }
+  #projects .project .information .projectContent {
+    font-size: 1.3vw;
+  }
+  #projects .project .information .usedSkills p {
+    font-size: 1.3vw;
+  }
+}
